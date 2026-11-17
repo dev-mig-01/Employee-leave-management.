@@ -15,10 +15,10 @@ python project for leave management of employees .
     }
 
     def parse_and_validate_dates(from_str, to_str):
-    """
-    Parses dates in YYYY-MM-DD format.
-    Returns (num_days, error_message).
-    """
+    
+    #Parses dates in YYYY-MM-DD format.
+    #Returns (num_days, error_message).
+    
         try:
             from_date = datetime.strptime(from_str.strip(), "%Y-%m-%d").date()
             to_date = datetime.strptime(to_str.strip(), "%Y-%m-%d").date()
